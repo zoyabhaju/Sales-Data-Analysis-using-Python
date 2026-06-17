@@ -1,50 +1,86 @@
-# Sales Data Analysis using Python
+# 📊 Sales Data Analysis using Python
 
-## Project Overview
+## 📌 Project Overview
 
-This project focuses on performing Exploratory Data Analysis (EDA) on a sales dataset containing over 186,000 transactions to uncover customer purchasing patterns, product performance, and revenue trends using Python. The objective was to answer real-world business questions and derive actionable insights from transactional data.
+This project focuses on performing Exploratory Data Analysis (EDA) on a sales dataset containing over 186,000 transactions to uncover customer purchasing patterns, product performance, and revenue trends. Using Python, the data was cleaned, transformed, and analyzed to answer real-world business questions and generate actionable business insights.
 
-The analysis identified monthly sales trends, peak customer purchasing hours, top-performing cities, and best-selling products. Market basket analysis was also performed to determine products that are frequently purchased together, providing insights for cross-selling and promotional strategies.
+The project explores sales performance across different products, cities, and time periods while identifying opportunities to optimize advertisement timing and product bundling strategies.
 
-## Dataset
 
-The dataset consists of sales transaction records collected throughout the year 2019. It was created by concatenating 12 separate monthly CSV files (January to December) into a single dataset containing over 186,000 transactions.
+## 📂 Dataset
 
-Each record represents an individual product purchased within an order and includes information such as Order ID, Product Name, Quantity Ordered, Price Each, Order Date, and Purchase Address.
+The dataset consists of sales transaction records collected throughout 2019. It was created by concatenating 12 separate monthly CSV files (January–December 2019) into a single dataset containing over 186,000 transactions.
 
-During preprocessing, repeated header rows introduced during the concatenation process were identified and removed before performing further analysis.
+Each row represents an individual product purchased within an order and includes customer purchase information such as product details, order date, quantity, price, and purchase location.
 
-Key columns:
+During preprocessing, repeated header rows introduced during the concatenation process were identified and removed before further analysis.
 
-Order ID
-Product
-Quantity Ordered
-Price Each
-Order Date
-Purchase Address
+- Order ID
+- Product
+- Quantity Ordered
+- Price Each
+- Order Date
+- Purchase Address
 
 Dataset Size: ~186,000+ records spanning January–December 2019.
 
-## Business Questions Answered
-Which month generated the highest sales?
-Which cities contributed the most revenue?
-What time should advertisements be displayed to maximize customer purchases?
-Which products are most frequently purchased together?
-Which products sold the most and how does pricing influence sales volume?
+## 🛠️ Tools & Technologies
 
-## Project Workflow
-1. Data Collection & Consolidation: Combined 12 monthly sales datasets from January to December 2019 into a single dataset containing over 186,000 transactions.
-2. Data Cleaning: Removed invalid and duplicate header rows, handled missing values, and corrected data types for numerical and datetime columns.
-3. Feature Engineering: Created new features such as Month, Month Name, Hour, City, and Sales to support deeper analysis.
-4. Exploratory Data Analysis (EDA): Analyzed monthly sales trends, city-wise performance, customer purchasing hours, and product performance.
-5. Market Basket Analysis: Identified products frequently purchased together to uncover cross-selling opportunities.
-6. Data Visualization: Built charts using Matplotlib to communicate key business insights and support data-driven decision-making.
-7. Business Insights: Generated recommendations on advertisement timing, product bundling strategies, and factors influencing product sales.
+Python, Pandas, NumPy, Matplotlib, Jupyter Notebook
 
-## Tools & Technologies
+## ⚙️ Project Workflow
 
-Python, Pandas, NumPy, Matplotlib
+### 1. Data Collection & Consolidation
 
-## Skills Demonstrated
+Combined 12 monthly sales datasets from January to December 2019 into a single dataset.
 
-Data Cleaning, Data Transformation, Feature Engineering, Exploratory Data Analysis (EDA), Data Visualization, Time-based Analysis, Market Basket Analysis, and Business Insight Generation.
+### 2. Data Cleaning
+
+- Removed invalid and repeated header rows
+- Handled missing values
+- Corrected numerical and datetime data types
+
+### 3. Feature Engineering
+
+Created additional features to support analysis:
+
+- Month
+- Month Name
+- Hour
+- City
+- Sales
+
+### 4. Exploratory Data Analysis (EDA)
+
+Performed analyses to uncover patterns related to:
+
+- Monthly sales performance
+- City-wise revenue distribution
+- Customer purchasing hours
+- Product performance
+
+### 5. Market Basket Analysis
+
+Identified products that are frequently purchased together to uncover cross-selling opportunities.
+
+### 6. Data Visualization
+
+The repository includes visualizations for:
+
+- Monthly Sales Analysis
+- Sales by City
+- Customer Purchasing Hours
+- Products Sold Together
+- Product Sales vs Average Price
+
+## 📈 Key Insights
+
+- Identified the highest-performing sales months throughout 2019.
+- Determined peak customer purchasing hours to optimize advertisement timing.
+- Identified top-performing cities by revenue.
+- Discovered products frequently purchased together.
+- Analyzed the relationship between product pricing and sales volume.
+
+## 🚀 Skills Demonstrated
+
+Data Cleaning, Data Transformation, Feature Engineering, Exploratory Data Analysis (EDA), Data Visualization, Time-based Analysis, Market Basket Analysis, Business Insight Generation
